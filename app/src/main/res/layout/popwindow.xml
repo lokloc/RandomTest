@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="475dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="center"
+    android:background="@drawable/circlelogin"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:shape="oval"
+    tools:context=".Pop">
+
+
+    <TextView
+        android:id="@+id/txtclose"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="end"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="431dp"
+        android:background="@drawable/circlebackground"
+        android:gravity="center"
+        android:outlineAmbientShadowColor="@color/colorAccent"
+        android:outlineSpotShadowColor="@color/colorAccent"
+        android:text="X"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="155dp"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="57dp"
+        android:layout_marginEnd="94dp"
+        android:layout_marginBottom="333dp"
+        android:text="Login"
+        android:textColor="@android:color/white"
+        android:textSize="57dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="175dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="58dp"
+        android:hint="이메일"
+        android:inputType="textWebEmailAddress"
+        android:textColor="@color/colorAccent"
+        android:textColorHighlight="#EFEAEA"
+        android:textColorHint="#F3EEEE"
+        android:textSize="20dp"
+        android:backgroundTint="@color/colorAccent">
+
+    </EditText>
+
+    <EditText
+        android:layout_width="333dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="278dp"
+        android:hint="비밀번호"
+        android:inputType="textPassword"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#F3F2F2"
+        android:textSize="20dp"
+        android:backgroundTint="@color/colorAccent">
+
+    </EditText>
+
+    <Button
+    android:id="@+id/signIn"
+    android:textStyle="normal"
+    android:layout_width="96dp"
+    android:layout_height="53dp"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentBottom="true"
+    android:layout_marginStart="129dp"
+    android:layout_marginTop="345dp"
+    android:layout_marginEnd="119dp"
+    android:layout_marginBottom="72dp"
+    android:text="로그인"
+    android:textColor="#000000"
+    android:backgroundTint="@color/colorAccent"
+    />
+
+    <Button
+        android:id="@+id/signUp"
+        android:layout_width="94dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="129dp"
+        android:layout_marginEnd="119dp"
+        android:layout_marginBottom="18dp"
+        android:backgroundTint="@color/colorAccent"
+        android:text="회원가입"
+        android:textColor="#000000"
+        android:textStyle="normal" />
+
+</RelativeLayout>
+
+
+

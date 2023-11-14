@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="409dp"
+        android:layout_height="421dp"
+        android:background="@color/colorPrimary"
+        android:layout_marginBottom="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="문제풀이!"
+            android:textColor="@android:color/white"
+            android:textSize="57dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="80dp"
+            android:backgroundTint="@color/colorAccent"
+            android:hint="이메일"
+            android:inputType="textWebEmailAddress"
+            android:textColor="@color/colorAccent"
+            android:textColorHighlight="#EFEAEA"
+            android:textColorHint="#F3EEEE"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="160dp"
+            android:backgroundTint="@color/colorAccent"
+            android:hint="비밀번호"
+            android:inputType="textPassword"
+            android:textColor="@color/colorAccent"
+            android:textColorHighlight="#EFEAEA"
+            android:textColorHint="#F3EEEE"
+            android:textSize="20dp" />
+
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/signIn"
+        android:layout_width="150dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="28dp"
+        android:text="로그인"
+        android:textColor = "@android:color/white"
+        android:textStyle="bold"
+        android:stateListAnimator="@null"
+        android:background="@drawable/rounded_corners"
+        app:layout_constraintBottom_toTopOf="@+id/signUp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <Button
+        android:id="@+id/signUp"
+        android:layout_width="150dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="64dp"
+        android:text="회원가입"
+        android:textColor = "@android:color/white"
+        android:textStyle="bold"
+        android:backgroundTint="#8A8A8A"
+        android:background="@drawable/rounded_corners"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
